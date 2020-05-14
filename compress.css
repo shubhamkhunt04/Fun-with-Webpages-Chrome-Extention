@@ -1,0 +1,29 @@
+body{
+    animation: compress 8s linear infinite;
+}
+@keyframes compress {
+    0% {
+        transform: scaleX(.75)
+    }
+
+    20% {
+        transform: scalex(.50);
+    }
+
+    40% {
+        transform: scaleX(.75);
+    }
+
+    60% {
+        transform: scaleX(1);
+    }
+
+    80% {
+        transform: scaleX(.75);
+    }
+
+    100% {
+        transform: scaleX(.50);
+    }
+
+}

@@ -1,0 +1,13 @@
+body {
+    animation: myskew 25s linear infinite;
+}
+
+@keyframes myskew {
+    0% {
+        transform: skew(0);
+    }
+
+    100% {
+        transform: skew(-40deg);
+    }
+}

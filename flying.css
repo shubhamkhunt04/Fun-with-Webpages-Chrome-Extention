@@ -1,0 +1,30 @@
+body {
+    animation: flying 8s linear infinite;
+}
+
+@keyframes flying {
+    0% {
+        transform: scaleY(.75)
+    }
+
+    20% {
+        transform: scaleY(1);
+    }
+
+    40% {
+        transform: scaleY(.75);
+    }
+
+    60% {
+        transform: scaleY(1);
+    }
+
+    80% {
+        transform: scaleY(.75);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+
+}

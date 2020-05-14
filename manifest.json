@@ -1,0 +1,46 @@
+{
+    "name": "Fun With Webpage",
+    "version": "1.0.0",
+    "description": "You can easily modified your webpage styles and also apply some interesting effect",
+    "manifest_version": 2,
+    "web_accessible_resources": [
+        "images/*.jpg",
+        "compress.css",
+        "flying.css",
+        "autozoominout.css",
+        "rotate.css",
+        "skew.css",
+        "vibratetext.css"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "permissions": [
+        "bookmarks",
+        "storage",
+        "tabs"
+    ],
+    "icons": {
+        "16": "./icons/icon16.png",
+        "32": "./icons/icon32.png",
+        "48": "./icons/icon48.png",
+        "128": "./icons/icon128.png"
+    },
+    "browser_action": {
+        "default_title": "Created By Shubham,Let's Enjoy !!",
+        "default_popup": "popup.html"
+    }
+}

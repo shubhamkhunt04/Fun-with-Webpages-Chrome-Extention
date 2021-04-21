@@ -1,6 +1,7 @@
-body{
+body {
     animation: compress 8s linear infinite;
 }
+
 @keyframes compress {
     0% {
         transform: scaleX(.75)

@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
-    console.log("installed successfully");
-})
+  console.log('installed successfully');
+});
 
 chrome.bookmarks.onCreated.addListener(() => {
-    alert("Bookmark Saved");
-})
+  alert('Bookmark Saved');
+});

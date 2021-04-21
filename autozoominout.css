@@ -1,6 +1,7 @@
 body {
     animation: zoom 8s linear infinite;
 }
+
 @keyframes zoom {
     0% {
         transform: scale(.75);

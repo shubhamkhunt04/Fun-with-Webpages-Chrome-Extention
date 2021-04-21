@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<style>
+  <style>
     div {
-        width: 350px;
+      width: 350px;
     }
 
     th,
     td {
-        padding: 5px !important;
+      padding: 5px !important;
     }
 
     input,
     select {
-        width: 120px
+      width: 120px;
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <div>
-        <table class="table table-striped">
-            <tbody>
-                <tr>
-                    <th scope="row"><label for="textcolor">Text Color</label></th>
-                    <td><input type="color" id="textcolor"></td>
-                </tr>
-                <tr>
-                    <th scope="row"><label for="backgroundcolor">Background Color</label></th>
-                    <td><input type="color" id="bgcolor"></td>
-                </tr>
-                <tr>
-                    <th scope="row"><label for="fontsize">Font Size</label></th>
-                    <td><select name="fontsizeselect" id="fontsize">
-                            <option value="">--Select Size--</option>
-                            <option value="4">4</option>
-                            <option value="8">8</option>
-                            <option value="12">12</option>
-                            <option value="14">14</option>
-                            <option value="16">16</option>
-                            <option value="18">18</option>
-                            <option value="20">20</option>
-                            <option value="22">22</option>
-                            <option value="26">26</option>
-                            <option value="30">30</option>
-                            <option value="34">34</option>
-                            <option value="38">38</option>
-                            <option value="42">42</option>
-                            <option value="48">48</option>
-                            <option value="54">52</option>
-                            <option value="64">64</option>
-                            <option value="74">74</option>
-                            <option value="86">86</option>
-                            <option value="100">100</option>
-                            <option value="116">116</option>
-                            <option value="132">132</option>
-                            <option value="148">148</option>
-                            <option value="162">162</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row"><label for="pdf">Generate pdf</label></th>
-                    <td><input type="button" value="PDF" id="pdfbtn"></td>
-                </tr>
-                <tr>
-                    <th scope="row"><label for="img">Change Images</label></th>
-                    <td><input type="button" value="Change" id="imagechange"></td>
-                </tr>
-                <tr>
-                    <th scope="row"><label for="effect">Crazy Effect</label></th>
-                    <td>
-                        <select name="selecteffect" id="effect">
-                            <option value="">--Select Effect--</option>
-                            <option value="compress">Compress</option>
-                            <option value="rotate">Rotater</option>
-                            <option value="vibratetext">Vibrate Text</option>
-                            <option value="flying">Flying</option>
-                            <option value="autozoominout">Auto Zoom in-out</option>
-                            <option value="skew">Skew</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row"><label for="paragraphreplacer">Paragraph Replacer</label></th>
-                    <td><input type="text" id="paragraphreplacer" placeholder="Type here"></td>
-                </tr>
-            </tbody>
-        </table>
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <th scope="row"><label for="textcolor">Text Color</label></th>
+            <td><input type="color" id="textcolor" /></td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <label for="backgroundcolor">Background Color</label>
+            </th>
+            <td><input type="color" id="bgcolor" /></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="fontsize">Font Size</label></th>
+            <td>
+              <select name="fontsizeselect" id="fontsize">
+                <option value="">--Select Size--</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="26">26</option>
+                <option value="30">30</option>
+                <option value="34">34</option>
+                <option value="38">38</option>
+                <option value="42">42</option>
+                <option value="48">48</option>
+                <option value="54">52</option>
+                <option value="64">64</option>
+                <option value="74">74</option>
+                <option value="86">86</option>
+                <option value="100">100</option>
+                <option value="116">116</option>
+                <option value="132">132</option>
+                <option value="148">148</option>
+                <option value="162">162</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="pdf">Generate pdf</label></th>
+            <td><input type="button" value="PDF" id="pdfbtn" /></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="img">Change Images</label></th>
+            <td><input type="button" value="Change" id="imagechange" /></td>
+          </tr>
+          <tr>
+            <th scope="row"><label for="effect">Crazy Effect</label></th>
+            <td>
+              <select name="selecteffect" id="effect">
+                <option value="">--Select Effect--</option>
+                <option value="compress">Compress</option>
+                <option value="rotate">Rotater</option>
+                <option value="vibratetext">Vibrate Text</option>
+                <option value="flying">Flying</option>
+                <option value="autozoominout">Auto Zoom in-out</option>
+                <option value="skew">Skew</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">
+              <label for="paragraphreplacer">Paragraph Replacer</label>
+            </th>
+            <td>
+              <input
+                type="text"
+                id="paragraphreplacer"
+                placeholder="Type here"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <script src="./popup.js"></script>
-</body>
-
+  </body>
 </html>

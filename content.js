@@ -1,6 +1,4 @@
-// console.log("hey shubham, this is content.js")
 chrome.runtime.onMessage.addListener((req, sender, sendRes) => {
-  // req(Message)
   let alltag = document.all;
 
   if (req.msg === 'textcolor') {
@@ -42,9 +40,6 @@ chrome.runtime.onMessage.addListener((req, sender, sendRes) => {
       console.log(index);
     });
   } else if (req.msg === 'effect') {
-    console.log('effect clicked');
-
-    //====================== daynamic css start===========================
     // Include CSS file
     function addCSS(filename) {
       var head = document.getElementsByTagName('head')[0];
@@ -54,7 +49,7 @@ chrome.runtime.onMessage.addListener((req, sender, sendRes) => {
       style.rel = 'stylesheet';
       head.append(style);
     }
-    //====================== daynamic css end===========================
+
     switch (req.txt) {
       case 'compress':
         let path1 = chrome.extension.getURL('compress.css');
@@ -88,52 +83,3 @@ chrome.runtime.onMessage.addListener((req, sender, sendRes) => {
     });
   }
 });
-
-// =============================code for toggel button=====================================
-
-//     const button = document.createElement('button');
-//     button.id = "darkModeButton";
-//     button.textContent = "Do It Dark";
-
-//     const input = document.createElement('input');
-//     input.type = "checkbox";
-//     input.id = "colorSetting";
-
-//     document.querySelector('#bgcolor').prepend(button, input, 'Auto apply ?');
-
-//     button.addEventListener('click', colorchanger);
-//     input.addEventListener('click', enableColormode);
-
-//     checkSetting();
-
-// };
-
-// function checkSetting() {
-//     chrome.storage.local.get(['enabled'], (result) => {
-//         const isEnable = result.enabled;
-//         console.log(isEnable);
-
-//         document.getElementById('colorSetting').checked = result.enabled;
-
-//         if (isEnable) {
-//             enableColormode();
-//         }
-//     })
-// }
-
-// function enableColormode() {
-//     const isEnable = document.getElementById('colorSetting').checked;
-//     const setting = {
-//         enabled: isEnable
-//     };
-
-//     chrome.storage.local.set(setting, () => {
-//         console.log("Stored :-", setting);
-//     })
-// }
-
-// function colorchanger() {
-//     document.getElementsByTagName('body')[0].style.backgroundColor = "black";
-// }
-
-// =================mycode========================********************************************************************

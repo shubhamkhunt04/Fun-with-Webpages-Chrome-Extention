@@ -8,7 +8,7 @@ body {
     }
 
     20% {
-        transform: scalex(.50);
+        transform: scaleX(.50);
     }
 
     40% {

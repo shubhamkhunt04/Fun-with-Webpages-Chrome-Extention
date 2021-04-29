@@ -5,7 +5,7 @@
     <img src="icons/icon128.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Fun-With-WebPage</h3>
+  <h3 align="center">Fun-With-WebPages</h3>
 
   <p align="center">
     A chrome extension that makes any website funny.
@@ -14,7 +14,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-# Fun With Webpage
+# Fun With Webpages
 
 Fun With Webpage is used to modify any website's text color, background color, font size, change all images on web pages, print any useful information in pdf format, replace all paragraph content, and also apply some funny effects to refresh your mind.
 
